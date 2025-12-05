@@ -1,7 +1,7 @@
 {
   "name": "majeng-life-core",
   "productName": "Majeng Life Core Admin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Core Insurance Administration System",
   "main": "electron-main.js",
   "repository": "https://github.com/CharlesM182/Data_Capture.git",
@@ -29,14 +29,16 @@
     "vite": "^4.3.9",
     "wait-on": "^7.0.1"
   },
-  "build": {
+"build": {
     "appId": "com.majenglife.admin",
     "productName": "Majeng Life",
-    "publish": {
-      "provider": "github",
-      "owner": "CharlesM182",
-      "repo": "Data_Capture"
-    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "CharlesM182",
+        "repo": "Data_Capture"
+      }
+    ],
     "win": {
       "target": "nsis",
       "icon": "icon.ico"
